@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Esportezim</title>
+    <style>
+    
+        body {
+            font-size: 16px;
+            color: #333;
+            background-color: #fff;
+        }
+
+     
+        body.daltonismo {
+            color: #ff0000;
+            background-color: #00ff00;
+        }
+
+      
+        #aumentar-fonte, #reduzir-fonte {
+            padding: 10px;
+            margin: 5px;
+            cursor: pointer;
+        
+        }
+
+        .caixa{
+            margin-right: 30px;
+            margin-left: 30px;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="caixa">
+    <h1 style="text-align: center;">Dalbert é apresentado pelo Inter, diz que está recuperado de lesão e pronto para jogar</h1>
+    <p>Lateral-esquerdo sofreu grave problema no joelho e não atua há mais de um ano, mas afirmou estar apto para atuar quando Coudet precisar</p>
+    <p>O Inter apresentou mais um reforço para o restante da temporada 2023. O lateral-esquerdo Dalbert recebeu a camisa 29 e deu suas primeiras palavras como jogador do clube. A contratação do atleta foi uma "oportunidade de mercado", como destacou o vice de futebol Felipe Becker.</p>
+    </div>
+    <div class="Botao">
+    <button id="aumentar-fonte">Aumentar Fonte</button>
+    <button id="alternar-daltonismo">Alternar Daltonismo</button>
+    <button id="reduzir-fonte">Reduzir Fonte</button>
+    </div>
+
+    
+    
+
+    <script>
+
+        document.getElementById("aumentar-fonte").addEventListener("click", function() {
+            changeFontSize(2);
+        });
+
+        document.getElementById("reduzir-fonte").addEventListener("click", function() {
+            changeFontSize(-2);
+        });
+
+       
+        document.getElementById("alternar-daltonismo").addEventListener("click", function() {
+            document.body.classList.toggle("daltonismo");
+        });
+
+        function changeFontSize(delta) {
+            var body = document.body;
+            var currentSize = window.getComputedStyle(body, null).getPropertyValue('font-size');
+            var newSize = (parseFloat(currentSize) + delta) + "px";
+            body.style.fontSize = newSize;
+        }
+    </script>
+</body>
+</html>

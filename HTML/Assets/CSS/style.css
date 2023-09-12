@@ -1,0 +1,41 @@
+.fotoperfil{
+border-radius: 100%;
+max-width: 350px;
+border: 3px solid rgb(255, 255, 255);
+
+}
+
+body{
+background-color:rgb(129, 69, 129);
+
+}
+.card{
+background-color: rgb(129, 69, 129);
+}
+.list-group-item{
+    background-color:rgb(129, 69, 129);
+}
+.cd{
+    color:white;
+}
+.nome{
+    color:yellow;
+}
+.ct{
+    color: green;
+}
+.exp{
+    color: green;
+}
+.form{
+    color:green;
+}
+.idiomas{
+color: yellow;
+}
+.link{
+    color:blue;
+}
+.proj{
+    color: yellow;
+}
